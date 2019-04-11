@@ -1,8 +1,8 @@
-package de.mosmann.bugs.components
+package de.flapdoodle.generics.uniontypes.k.components
 
-import de.mosmann.bugs.framework.Component
-import de.mosmann.bugs.framework.HasValidation
-import de.mosmann.bugs.framework.HasValue
+import de.flapdoodle.generics.uniontypes.k.framework.Component
+import de.flapdoodle.generics.uniontypes.k.framework.HasValidation
+import de.flapdoodle.generics.uniontypes.k.framework.HasValue
 
 class TextField : Component(), HasValue<String>, HasValidation {
   private var value: String? = null

@@ -1,8 +1,8 @@
-package de.mosmann.bugs
+package de.flapdoodle.generics.uniontypes.k
 
-import de.mosmann.bugs.framework.Component
-import de.mosmann.bugs.framework.HasValidation
-import de.mosmann.bugs.framework.HasValue
+import de.flapdoodle.generics.uniontypes.k.framework.Component
+import de.flapdoodle.generics.uniontypes.k.framework.HasValidation
+import de.flapdoodle.generics.uniontypes.k.framework.HasValue
 
 @Deprecated("needed for a hack to make the code compile")
 class Fake<T> : Component(), HasValue<T>, HasValidation {

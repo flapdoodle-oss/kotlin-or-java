@@ -1,12 +1,12 @@
-package de.mosmann.bugs
+package de.flapdoodle.generics.uniontypes.k
 
-import de.mosmann.bugs.components.DateField
-import de.mosmann.bugs.components.FieldFactory
-import de.mosmann.bugs.components.TextField
-import de.mosmann.bugs.framework.Component
-import de.mosmann.bugs.framework.HasValidation
-import de.mosmann.bugs.framework.HasValue
-import de.mosmann.bugs.model.Property
+import de.flapdoodle.generics.uniontypes.k.components.DateField
+import de.flapdoodle.generics.uniontypes.k.components.FieldFactory
+import de.flapdoodle.generics.uniontypes.k.components.TextField
+import de.flapdoodle.generics.uniontypes.k.framework.Component
+import de.flapdoodle.generics.uniontypes.k.framework.HasValidation
+import de.flapdoodle.generics.uniontypes.k.framework.HasValue
+import de.flapdoodle.generics.uniontypes.k.model.Property
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import java.time.LocalDate

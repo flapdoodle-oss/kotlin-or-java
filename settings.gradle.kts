@@ -1,3 +1,3 @@
 
-rootProject.name = "generic-return-type-overload"
+rootProject.name = "kotlin-or-java"
 

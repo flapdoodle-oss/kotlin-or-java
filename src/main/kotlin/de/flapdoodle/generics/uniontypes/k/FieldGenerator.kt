@@ -1,17 +1,17 @@
-package de.mosmann.bugs
+package de.flapdoodle.generics.uniontypes.k
 
-import de.mosmann.bugs.components.FieldFactory
-import de.mosmann.bugs.framework.Component
-import de.mosmann.bugs.framework.HasValidation
-import de.mosmann.bugs.framework.HasValue
-import de.mosmann.bugs.model.Property
+import de.flapdoodle.generics.uniontypes.k.components.FieldFactory
+import de.flapdoodle.generics.uniontypes.k.framework.Component
+import de.flapdoodle.generics.uniontypes.k.framework.HasValidation
+import de.flapdoodle.generics.uniontypes.k.framework.HasValue
+import de.flapdoodle.generics.uniontypes.k.model.Property
 
 class FieldGenerator(private val fieldFactory: FieldFactory) {
 
   fun addFields(parent: Component, properties: List<Property<out Any>>) {
     properties.forEach{
       //addField(parent, it) // TODO should compile
-      addField<Any,Fake<Any>>(parent, it) // TODO should not compile??
+      addField<Any, Fake<Any>>(parent, it) // TODO should not compile??
     }
   }
 
@@ -25,6 +25,12 @@ class FieldGenerator(private val fieldFactory: FieldFactory) {
     parent.add(field)
   }
 
+  /**
+   * compiles with -XXLanguage:+NewInference
+   *
+   * where factory has this type:
+   *  {Component & HasValue<T> & HasValidation}
+   */
 //  fun <T> addField(parent: Component, property: Property<out T>) {
 //    val factory = fieldFactory.factoryFor(property.type)
 //    val field = factory.invoke()

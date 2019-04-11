@@ -1,4 +1,4 @@
-package de.mosmann.bugs.framework
+package de.flapdoodle.generics.uniontypes.k.framework
 
 open class Component {
 
