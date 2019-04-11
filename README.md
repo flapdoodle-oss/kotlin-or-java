@@ -8,6 +8,7 @@ kotlin or java, a playground
 * Extension Methods
 * reified types
 * Functional Signature (X.() -> Y vs (X) -> Y etc..)
+* Java vs Kotlin Bytecode
 
 # blog posts
 
