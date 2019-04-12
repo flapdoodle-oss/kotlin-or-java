@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
   // Apply the Kotlin JVM plugin to add support for Kotlin on the JVM.
-  kotlin("jvm") version "1.3.11"
+  kotlin("jvm") version "1.3.20"
 }
 
 allprojects {
@@ -33,9 +33,9 @@ allprojects {
   }
 
   dependencies {
-    compile("org.jetbrains.kotlin:kotlin-stdlib:1.3.11")
-    compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.11")
-    compile("org.jetbrains.kotlin:kotlin-stdlib-common:1.3.11")
+    compile("org.jetbrains.kotlin:kotlin-stdlib:1.3.20")
+    compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.20")
+    compile("org.jetbrains.kotlin:kotlin-stdlib-common:1.3.20")
 
     testCompile("org.junit.jupiter:junit-jupiter-api:5.3.2")
     testCompile("org.junit.jupiter:junit-jupiter-params:5.3.2")
