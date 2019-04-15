@@ -11,4 +11,8 @@ class HasJavaFunctionParameterAsKotlin {
   fun <S, D> javaFunctionAsKotlin(function: JavaFunctionAsKotlin<S, D>) {
 
   }
+
+  fun <S, D> kotlin(function: (S) -> D) {
+
+  }
 }

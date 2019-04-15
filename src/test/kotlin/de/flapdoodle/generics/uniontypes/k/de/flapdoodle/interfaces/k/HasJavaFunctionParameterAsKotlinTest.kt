@@ -37,5 +37,8 @@ class HasJavaFunctionParameterAsKotlinTest {
         return source.toDouble()
       }
     })
+
+    testee.kotlin<Any, Any> { s -> s }
+    testee.kotlin<Int, Double> { it.toDouble() }
   }
 }
