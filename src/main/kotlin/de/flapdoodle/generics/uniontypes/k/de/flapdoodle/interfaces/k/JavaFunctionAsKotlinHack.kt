@@ -9,7 +9,7 @@ interface JavaFunctionAsKotlinHack<S, D> {
   }
 
   companion object {
-    operator fun <S,D> invoke (delegate: (S) -> D): JavaFunctionAsKotlinHack<S, D> {
+    inline operator fun <S,D> invoke (noinline delegate: (S) -> D): JavaFunctionAsKotlinHack<S, D> {
       return object : JavaFunctionAsKotlinHack<S,D> {
         override fun map(source: S): D {
           return delegate(source)
