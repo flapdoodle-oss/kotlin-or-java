@@ -31,7 +31,7 @@ class HasJavaFunctionParameterAsKotlinTest {
         return source
       }
     })
-    
+
     testee.javaFunctionAsKotlin(object : JavaFunctionAsKotlin<Int, Double> {
       override fun map(source: Int): Double {
         return source.toDouble()
