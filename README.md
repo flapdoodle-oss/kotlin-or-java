@@ -2,6 +2,10 @@
 
 kotlin or java, a playground
 
+## Table Of Contents
+
+see `de.flapdoodle.TableOfContent`
+
 ## todo
 
 * Java Interfaces vs Kotlin Interfaces
