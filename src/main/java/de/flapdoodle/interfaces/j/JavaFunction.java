@@ -1,4 +1,4 @@
-package de.flapdoodle.generics.uniontypes.j.de.flapdoodle.interfaces.j;
+package de.flapdoodle.interfaces.j;
 
 @FunctionalInterface
 public interface JavaFunction<S,D> {

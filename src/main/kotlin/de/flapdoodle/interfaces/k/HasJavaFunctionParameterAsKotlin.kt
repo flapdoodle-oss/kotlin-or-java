@@ -1,6 +1,6 @@
-package de.flapdoodle.generics.uniontypes.k.de.flapdoodle.interfaces.k
+package de.flapdoodle.interfaces.k
 
-import de.flapdoodle.generics.uniontypes.j.de.flapdoodle.interfaces.j.JavaFunction
+import de.flapdoodle.interfaces.j.JavaFunction
 
 class HasJavaFunctionParameterAsKotlin {
 

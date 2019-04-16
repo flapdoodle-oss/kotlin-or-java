@@ -1,8 +1,9 @@
-package de.flapdoodle.generics.uniontypes.k.de.flapdoodle.interfaces.k
+package de.flapdoodle.interfaces.k
 
-import de.flapdoodle.generics.uniontypes.j.de.flapdoodle.interfaces.j.HasJavaFunctionParameter
-import de.flapdoodle.generics.uniontypes.j.de.flapdoodle.interfaces.j.JavaFunction
-import org.junit.jupiter.api.Assertions.*
+import de.flapdoodle.interfaces.j.HasJavaFunctionParameter
+import de.flapdoodle.interfaces.j.JavaFunction
+import de.flapdoodle.interfaces.k.HasJavaFunctionParameterAsKotlin
+import de.flapdoodle.interfaces.k.JavaFunctionAsKotlin
 import org.junit.jupiter.api.Test
 
 class HasJavaFunctionParameterAsKotlinTest {

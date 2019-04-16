@@ -1,8 +1,7 @@
-package de.flapdoodle.generics.uniontypes.j.de.flapdoodle.interfaces.j;
+package de.flapdoodle.interfaces.j;
 
+import de.flapdoodle.interfaces.j.HasJavaFunctionParameter;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class HasJavaFunctionParameterTest {
 

@@ -1,18 +1,18 @@
-package de.flapdoodle.generics.uniontypes.k.de.flapdoodle.interfaces.k
+package de.flapdoodle.interfaces.k
 
-import org.junit.jupiter.api.Assertions
+import de.flapdoodle.interfaces.k.JavaFunctionAsKotlin
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class JavaFunctionAsKotlinTest {
   @Test
   fun delegateMustWork() {
-    val a = object : JavaFunctionAsKotlin<Int,Double> {
+    val a = object : JavaFunctionAsKotlin<Int, Double> {
       override fun map(source: Int): Double {
         return source.toDouble()
       }
     }
-    val testee = a.andThen(object : JavaFunctionAsKotlin <Double, String> {
+    val testee = a.andThen(object : JavaFunctionAsKotlin<Double, String> {
       override fun map(source: Double): String {
         return source.toString()
       }
