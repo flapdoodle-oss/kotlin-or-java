@@ -13,6 +13,7 @@ see `de.flapdoodle.TableOfContent`
 * reified types
 * Functional Signature (X.() -> Y vs (X) -> Y etc..)
 * Java vs Kotlin Bytecode
+* self types
 
 # blog posts
 
