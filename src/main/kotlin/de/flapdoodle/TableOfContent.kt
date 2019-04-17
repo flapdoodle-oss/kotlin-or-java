@@ -8,7 +8,9 @@ import kotlin.reflect.KClass
 object TableOfContent {
 
   val topics = listOf(
+      LocalTypes(),
       UnionTypes(),
+      SelfTypes(),
       FunctionInterfaces()
   )
 
@@ -16,6 +18,15 @@ object TableOfContent {
     val kotlin: KClass<out Any>?
     val java: Class<out Any>?
   }
+
+  /**
+   * kotlin kann lokale typedeklarationen nicht ignorieren.. also muss man pflaster drauf kleben
+   * das kann unter umständen sehr schwer werden.. (siehe UnionTypes)
+   */
+  data class LocalTypes(
+      override val kotlin: KClass<out Any> = de.flapdoodle.generics.local.k.HasLocalTypeMethod::class,
+      override val java: Class<out Any> = de.flapdoodle.generics.local.j.HasLocalTypeMethod::class.java
+  ) : Topic
 
   /**
    * kotlin kann mit lokalen typdeclarationen nicht umgehen..
